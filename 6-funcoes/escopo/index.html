@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Escopo</h1>
+  <ul>
+    <li>O que acontece dentro de uma função, fica serapara do escopo global</li>
+    <li>Escopo global, seria todo o arquivo javascript</li>
+    <li>
+      <h3>Exemplo</h3>
+      <pre>
+        let n = 10;
+        function teste(){
+          let n = 25;
+          console.log(n);
+        }
+        teste();
+        console.log(n);
+
+        // perceba que as variaveis n, exibirão valores diverentes, respeitando o escopo o qual foram declaradas
+      </pre>
+    </li>
+    <li>Usando let e const também são respeitado os escopos de if e else e blocos de codigos em geral e não so apenas em funções</li>
+  </ul>
+</body>
+</html>
