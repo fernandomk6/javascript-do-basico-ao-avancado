@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>O que são funções</h1>
+    <ul>
+        <li>Funções são estruturas de códigos menores que são reaproveitadas durante a execução/construção de um programa</li>
+        <li>Principal objetivo: Poupar repetição de código</li>
+        <li>Podem ser consideradas 'sub-programadas'</li>
+        <li>
+            <h3>Exemplo de declarações de funções</h3>
+            <ol>
+                <li>
+                    <pre>
+                        function escreverNoConsole(){
+                            console.log("Escrevendo no console!");
+                        }
+
+                        escreverNoConsole();
+                    </pre>
+                </li>
+                <li>
+                    <pre>
+                        const textNoConsole = function(){
+                            console.log("Texto no console!");
+                        }
+
+                        textoNoConsole();
+                    </pre>
+                </li>
+                <li>
+                    <pre>
+                        const textPorParametro = function(text){
+                            console.log(text);
+                        }
+
+                        textPorParametro("Texto por parâmetro");
+                    </pre>
+                </li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
