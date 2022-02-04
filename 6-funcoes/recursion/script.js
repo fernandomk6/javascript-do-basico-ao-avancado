@@ -41,3 +41,23 @@ function riquezaDoElias(suaRiqueza){
 }
 
 riquezaDoElias(1);
+
+function esculhambarElias(x){
+    if(x.includes("pc")){
+        console.log("Elias foi derrotado");
+    } else{
+        console.log("Elias está safe");
+    }
+}
+
+esculhambarElias("maldito");
+let caraLa = {
+    "comedor": false
+}
+
+let mundo = {
+    "destroy": destroy()
+};
+if(caraLa.comedor == true){
+    mundo.destroy(true);
+}
