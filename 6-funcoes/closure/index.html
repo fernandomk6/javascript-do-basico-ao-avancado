@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Closure</h1>
+  <ul>
+    <li>Uma função que se lembra do ambiente em que ela foi criada</li>
+    <li>
+      <h3>Exemplo</h3>
+      <pre>
+        function armazenarSoma(x){
+          return y => x + y;
+        }
+
+        let soma1 = armazenarSoma(3);
+        console.log(soma1(5)); // 8
+        let soma2 = armazenarSoma(5);
+        console.log(soma2(10)); // 15
+
+        // basicamente é uma função que retorna uma função
+        // é uma função que armazena outra função com um parametro ja gravado
+      </pre>
+    </li>
+  </ul>
+</body>
+</html>
