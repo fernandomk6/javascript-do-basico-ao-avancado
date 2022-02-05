@@ -84,3 +84,24 @@ function ex8(str){
 }
 
 ex8("Olá");
+
+function ex9(base, expoente){
+    return Math.pow(base, expoente);
+}
+
+console.log(ex9(2, 3));
+
+function ex10(n){
+    if(n % 2 == 0){
+        console.log(`${n} é par`);
+    }
+    n--;
+    
+    if(n == 0){
+        console.log("finalizado");
+    } else{
+        ex10(n);
+    }
+}
+
+ex10(30);
