@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Objetos: mais sobre objetos</h1>
+  <ul>
+    <li>Podemos copiar todas as propriedades de um obj para outro</li>
+    <li>
+      <pre>
+        let objetoA = {
+          prop1: "teste",
+          prop2: "testando"
+        };
+
+        let objetoB = {
+          prop3: "propriedade"
+        }
+
+        Object.assign(objetoA, objetoB);
+        console.log(objetoA);
+
+        // objeto A, herdará todas as propriedades de objetoB
+      </pre>
+    </li>
+  </ul>
+</body>
+</html>
