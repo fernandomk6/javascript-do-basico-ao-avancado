@@ -1,7 +1,13 @@
-// * 0 ou n
-// + 1 ou n
-// ? 0 ou 1
+// * 0 ou n {0,}
+// + 1 ou n {1,}
+// ? 0 ou 1 {0,1}
 // \ caractere de escape
+// {n,m} {minimo, maximo}
+// {10,} no mínimo 10
+// {,10} no máximo 10
+// {10} exatamente 10
+// () grupos
+// | ou
 const re = /a+b*c?/gi;
 let str = "abc cba ab ac abc bc aaaaabccc";
 
@@ -26,9 +32,14 @@ let files = [
   "marreco.MP4",
   "curso-javascript.mp4",
   "furacao200.jpeg",
-  "wesley-safadao-as-melhores.JPEG"
+  "wesley-safadao-as-melhores.JPEG",
+  "fernando.jpEg"
 ];
 
+// const re2 = /\.(jpg|jpeg)/gi;
+// const re2 = /\.jpe?g/gi;
+// const re2 = /\.jpe{0,}g/gi;
+const re2 = /\.jp(e|E)?g/gi;
 for(const file of files){
-  console.log(file);
+  console.log(file, file.match(re2));
 }
