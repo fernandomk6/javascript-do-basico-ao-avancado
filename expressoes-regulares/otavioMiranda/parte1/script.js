@@ -8,6 +8,7 @@
 // {10} exatamente 10
 // () grupos
 // | ou
+// [0-9] [a-Z] [A-Z]
 const re = /a+b*c?/gi;
 let str = "abc cba ab ac abc bc aaaaabccc";
 

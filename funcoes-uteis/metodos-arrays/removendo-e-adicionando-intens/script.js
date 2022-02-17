@@ -3,6 +3,7 @@ console.log(itens);
 // removendo o notebook
 let itemRemovido = itens.splice(1, 1);
 // primeiro parametro indice que será removido
+
 // segundo parametro, quantos indices serão removidos apartir do primeiro
 console.log(itemRemovido + " foi removido");
 console.log(itens);
