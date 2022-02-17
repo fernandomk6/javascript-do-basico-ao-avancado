@@ -1,6 +1,8 @@
-// ^ começa com
-// $ termina com
+// ^ começa com | observar flag m
+// $ termina com | observar flag m
 // exemplo /^(25[0-5])(\.)/g
+
+// flag m - multilinha (altera comportamento do ^ e $)
 
 let str = "fernando aaa henrique bb pbontes pereira fernando";
 const re = /a+|bb?/g;
