@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Revisando Expressões Regulares</h1>
+  <h2>conjuntos</h2>
+  <ul>
+    <li>Exemplo [abc]</li>
+    <li>Corresponde a busca de um único caractere, que pode se qualquer valor dentro do conjunto</li>
+    <li>O meta caractere hifen cria uma sequencia de caracteres, por exemplo [0-9], corresponde a todos os numeros entre 0 e 9</li>
+    <li>Outros exemplos de conjuntos [a-z][A-Z][0-9]</li>
+    <li>Podemos criar exemplos isolados também como [abc] ou [a-c]</li>
+    <li>É possivel negar tudo que está dentro de um conjunto com o metacaractere ^. Quando informado no inicio de um conjunto, buscara por tudo, menos o que estiver dentro do conjunto</li>
+  </ul>
+  <h2>Grupos</h2>
+  <ul>
+    <li>Cria uma especie de variavel, armazena o valor encontrado e pode ser repedido usando \1</li>
+    <li>\1 deve ser igual ao valor literal dinamico encontrado pelo grupo</li>
+    <li>Exemplo /(fernando)\1/ ira encontrar apenas fernandofernando</li>
+    <li>Exmplo 2 /(fernand[a-z])\1/ ira encontrar fernandzfernandz e não fernandzfernando, pois lembre que os dois valores devem ser iguais, literalmente</li>
+  </ul>
+</body>
+</html>
