@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Promises</h1>
+  <ul>
+    <li>As promisses são acões assíncronas que podem produzir um valor em algum momento no código</li>
+    <li>Uma forma de dizer a linguagem que um valor pode estar presente em um futuro do código</li>
+    <li>O objeto das promises é Promises, resolve é o método que resolve uma Promise, o then é o que faz ele poder ser executada em um ponto futuro</li>
+    <li>
+      <pre>
+        let promessa = Promise.resolve(4 + 8);
+        console.log("Algum código");
+        promessa.then((value) => console.log(`A soma é ${value}`));
+      </pre>
+    </li>
+  </ul>
+</body>
+</html>
