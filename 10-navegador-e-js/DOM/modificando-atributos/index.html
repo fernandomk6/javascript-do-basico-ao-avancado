@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    body{
+      position: relative;
+    }
+    .external-box{
+      padding: 10px;
+      background-color: lightgray;
+      position: relative;
+    }
+    .internal-box{
+      padding: 10px;
+      position: relative;
+    }
+    #box1{
+      background-color: aquamarine;
+      
+    }
+    #box2{
+      background-color: aqua;
+    }
+    .absolute{
+      position: absolute;
+      top: 536px;
+      padding: 10px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-title">A estrutura HTML e o DOM</h1>
+  <p id="main-discription">Descrição original</p>
+  <a id="link" href="www.google.com.br">Google</a>
+  <button id="change-fish">Trocar pexe</button>
+  <img src="fish1.png" alt="fish">
+  <div class="external-box">
+    <div id="box1" class="internal-box">box 1</div>
+    <div id="box2" class="internal-box">box 2</div>
+  </div>
+  <div class="absolute">absoluta</div>
+  <script src="script.js"></script>
+</body>
+</html>
