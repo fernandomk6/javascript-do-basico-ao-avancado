@@ -29,4 +29,3 @@ console.log("by tag", firstListItem);
 // querySelectorAll retorna em HTML colection todos os elementos correspondente ao seletor
 let allLi = document.querySelectorAll(".list-item");
 console.log(allLi);
-
