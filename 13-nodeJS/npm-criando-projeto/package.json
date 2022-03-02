@@ -1,0 +1,14 @@
+{
+  "name": "npm-criando-projeto",
+  "version": "1.0.0",
+  "description": "criando o meu primeiro projeto com node e npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fernando henrique",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
