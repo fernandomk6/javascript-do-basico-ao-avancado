@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const db = require("./bd/connection");
+const db = require("../db/connection");
 const Job = db.define("job", {
   title: {
     type: Sequelize.STRING
@@ -16,7 +16,7 @@ const Job = db.define("job", {
   email: {
     type: Sequelize.STRING
   },
-  new: {
+  new_job: {
     type: Sequelize.INTEGER
   }
 });
