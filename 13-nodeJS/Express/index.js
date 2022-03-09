@@ -6,7 +6,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/test', function(req, res) {
-    res.send('Rota test');
+    res.send('Rota tnode est');
 });
 
 app.listen(3000, function() {
