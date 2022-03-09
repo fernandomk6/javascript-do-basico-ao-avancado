@@ -1,14 +1,13 @@
-const { application } = require("express");
-const express = require("express");
-const router = express.Router();
-const Job = require("../models/Job");
+const express         = require("express");
+const router          = express.Router();
+const Job             = require("../models/Job");
 
 router.get("/test", function(req, res) {
     res.send("deu certo");
 });
 
 // add job via post
-router.post("/add", function(req, res) {
+router.post("/add", (req, res) => {
    let {title, salary, company, description, email, new_job} = req.body;
 
     // inserir dados no sistema
